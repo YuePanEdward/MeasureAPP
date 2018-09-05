@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.test.measureapp.About"
+    tools:showIn="@layout/activity_about">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView"
+        android:text="By Yue Pan et.al \n from School of Geomatics and Geodesy, Wuhan Univeristy"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textView24"
+        android:layout_alignStart="@+id/textView24"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:textSize="@dimen/abc_action_bar_icon_vertical_padding_material" />
+
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageView2"
+        android:layout_above="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/whu"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/imageView5"
+        android:src="@drawable/sgg"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:id="@+id/imageView6"
+        android:src="@drawable/whu1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="(Version 0.1) This is an APP used for conducting simple measurment of distance, speed, angle and magnetic magnitude using low-end snesors on the smartphone."
+        android:id="@+id/textView2"
+        android:layout_below="@+id/imageView6"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/abc_action_bar_icon_vertical_padding_material" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Introduction"
+        android:id="@+id/textView23"
+        android:layout_above="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:textSize="@dimen/abc_action_button_min_width_overflow_material" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Authors&amp;Affiliation"
+        android:id="@+id/textView24"
+        android:textSize="@dimen/abc_action_button_min_width_overflow_material"
+        android:layout_above="@+id/imageView5"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="160dp"
+        android:id="@+id/imageView9"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/m06"
+        android:scaleType="fitXY" />
+</RelativeLayout>
